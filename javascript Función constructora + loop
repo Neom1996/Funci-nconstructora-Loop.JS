@@ -1,0 +1,51 @@
+var marca = [ 
+"Ford",
+"Volkswagen",
+"Chevrolet",
+"Mitsubishi",
+"Kia",
+"Toyota",
+"Hyundai",
+"Renault",
+"Brilliance",
+"suzuki",
+]
+
+var modelo = [
+"Fiesta",
+"Jetta",
+"Tracker",
+"Montero",
+"Sportage",
+"Rav 4",
+"Tucson",
+"Koleos",
+"V 5",
+"Vitara",
+]
+
+var annio = [
+2011,
+2012,
+2013,
+2014,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+]
+
+function auto(marca, modelo, annio) {
+    this.marca = marca,
+    this.modelo =modelo,
+    this.annio = annio}
+
+
+
+for (var i=0; marca.length > i &&  modelo.length > i &&  annio.length; i ++) {
+
+    var autoNuevo = new auto (marca [i], modelo [i], annio [i]);
+    console.log(autoNuevo)
+}
